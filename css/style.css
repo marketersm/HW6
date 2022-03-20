@@ -1,0 +1,140 @@
+/* global config */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+*::selection{
+    background-color: var(--highlight-color);
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Merriweather', sans-serif !important ;
+}
+
+.header-section{
+    background-image: url('../image/slide-1.jpg');
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-overlay{
+    background-color: rgba(51, 51, 51, .7);
+    height: 100%;
+    width: 100%;
+
+}
+
+.wrapper{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    height: 42px;
+    width: 105px;
+}
+.nav-menu{
+    display: flex;
+
+}
+
+.nav-item{
+    margin-right: 32px;
+
+}
+
+.nav-link{
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    user-select: none;
+    
+}
+
+.nav-link::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .4s ease-in-out;
+    margin: auto;
+    
+
+}
+
+.nav-link:hover::before{
+    width: 100%;
+
+}
+
+.nav-item:first-child .nav-link::before{
+    width: 100%;
+}
+
+.hero{
+    text-align: center;
+    color: white;
+    padding-top: 200px ;
+}
+
+.hero h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 22px;
+    padding: 0 300px;
+    margin: 10px 0 47px;
+
+}
+
+.hero a{
+    color: #d8ae76;
+    font-size: 14px;
+    font-weight: 700;
+    height: 53px;
+    width: 210px;
+    background-color: transparent;
+    border: 1px solid #d8ae76;
+    border-radius: 6px;
+    line-height: 52px;
+    transition: .4s ease-in-out;
+    user-select: none;
+
+}
+
+.hero a:hover{
+    color: white;
+    background-color: #d8ae76;
+}
+
